@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>for...in loop</title>
+</head>
+
+<body>
+    <script>
+        // const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // for (const index in digits) {
+        //     console.log(digits[index]);
+        // }
+
+        Array.prototype.decimalfy = function () {
+            for (let i = 0; i < this.length; i++) {
+                this[i] = this[i].toFixed(2);
+            }
+        };
+
+        const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        for (const index in digits) {
+            console.log(digits[index]);
+        }
+    </script>
+</body>
+
+</html>

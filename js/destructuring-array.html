@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destructuring</title>
+</head>
+
+<body>
+    <script>
+        const point = [10, 25, -34];
+        const [x, y, z] = point;
+        console.log(x, y, z);
+
+        const [a,,c]=point;
+        console.log(a,c);
+    </script>
+</body>
+
+</html>
