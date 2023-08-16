@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+
+  <style>
+  .container{
+    /* This is just one example of a solution */
+    display:grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-gap: 15px;
+    background-color: aqua;
+    /* grid-template-rows optional here */
+  }
+  .box{
+        
+        height: 150px;
+        border: 1px solid red;
+    }
+    #space1 {
+      width: 250px;
+      background-color: orange;
+      grid-area: 1/1/4/4;
+    }
+    #space2 {
+      width: 250px;
+      background-color: red;
+    }
+    #space3 {
+      width: 250px;
+      background-color: blue;
+    }
+    #space4 {
+      width: 250px;
+      background-color: yellow;
+    }
+    #space5 {
+      width: 250px;
+      background-color: black;
+    }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div class="box" id="space1"> Space 1</div>
+    <div class="box" id="space2"> Space 2</div>
+    <div class="box" id="space3"> Space 3</div>
+    <div class="box" id="space4"> Space 4</div>
+    <div class="box" id="space5"> Space 5</div>
+  </div>
+  </body>
+</html>
