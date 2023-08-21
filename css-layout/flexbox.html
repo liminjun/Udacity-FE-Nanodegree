@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用Grid和Flex布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+        }
+        #header {
+            grid-area:header;
+            text-align: center;
+            border: 1px solid red;
+        }
+        #left-panel {
+            grid-area:sidebar;
+            border: 1px solid red;
+        }
+        #right-panel {
+            grid-area:main;
+            border: 1px solid red;
+        }
+        #footer {
+            grid-area: footer;
+            text-align: center;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h3>City Gallery</h3>
+        </div>
+    
+            <div id="left-panel">
+                <ul>
+                    <li>London</li>
+                    <li>Paris</li>
+                    <li>Tokyo</li>
+                </ul>
+            </div>
+            <div id="right-panel">
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </div>
+  
+        <div id="footer">
+            <p>Coypright   Web开发工作坊-前端方向</p>
+        </div>
+    </div>
+</body>
+</html>

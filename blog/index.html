@@ -8,7 +8,36 @@
       name="viewport"
     />
     <link rel="stylesheet" href="css/style.css">
-
+    <style>
+      #nestedGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        border: 3px solid white;
+      }
+      .photoBox {
+        width: 250px;
+        height: 150px;
+        border: 1px solid red;
+        background-color: #f9fa4d;
+      }
+      #one {
+        background-image: url('images/waterfall.jpg');
+        background-size: contain;
+      }
+      #two {
+        background-image: url('images/waterfall.jpg');
+        background-size: contain;
+      }
+      #three {
+        background-image: url('images/waterfall.jpg');
+        background-size: contain;
+      }
+      #four {
+        background-image: url('images/waterfall.jpg');
+        background-size: contain;
+      }
+    </style>
   </head>
 
   <body>
@@ -23,6 +52,20 @@
     </div>
     <div class="content box">
         <!-- <img src="images/waterfall.jpg" alt="waterfall"> -->
+        <div id="nestedGrid">
+          <div id="one" class="photoBox">
+
+          </div>
+          <div id="two" class="photoBox">
+
+          </div>
+          <div id="three" class="photoBox">
+
+          </div>
+          <div id="four" class="photoBox">
+
+          </div>
+        </div>
     </div>
     <div class="footer box">Footer</div>
   </div>

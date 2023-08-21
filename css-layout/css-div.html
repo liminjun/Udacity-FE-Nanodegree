@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用CSS+DIV布局</title>
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+        #header {
+            border: 1px solid red;
+            text-align: center;
+        }
+        #body-container {
+            float: left;
+            height: 800px;
+            border: 1px solid red;
+        }
+        #left-panel {
+            float: left;
+            width: calc(10%-2);
+            border: 1px solid red;
+        }
+        #right-panel {
+            float: left;
+            width: calc(90%-2);
+            border: 1px solid red;
+        }
+        #footer {
+            text-align: center;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h3>City Gallery</h3>
+        </div>
+        <div id="body-container">
+            <div id="left-panel">
+                <ul>
+                    <li>London</li>
+                    <li>Paris</li>
+                    <li>Tokyo</li>
+                </ul>
+            </div>
+            <div id="right-panel">
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Coypright   Web开发工作坊-前端方向</p>
+        </div>
+    </div>
+</body>
+</html>

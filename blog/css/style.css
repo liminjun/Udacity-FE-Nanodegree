@@ -36,12 +36,19 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-  @media(min-width:900px) {
-    body {
-      background: red;
-      font-size: 20px;
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px){
+    .container{
+          display:grid;
+          grid-template-columns: 300px 300px 300px;
+          grid-template-rows: 250px 600px;
+          grid-template-areas: 
+          "hd hd hd hd hd hd hd hd"
+          "sd sd main main main main main main"
+          "ft ft ft ft ft ft ft ft";
+          border: 2px solid red;
+      }
     }
-  }
   @media(max-width:900px) {
     body {
       background: blue;
